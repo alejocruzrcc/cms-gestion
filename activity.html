@@ -15,13 +15,8 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#sortable1, #sortable2" ).sortable({
-      connectWith: ".connectedSortable"
-    }).disableSelection();
-  } );
-  </script>
+  <script src="js/main.js"></script>
+  
 </head>
 <body>
  
@@ -32,11 +27,11 @@
         <div class="selectionactivity">
         <ul id="sortable1" class="connectedSortable">
 
-          <li class="ui-state-default"><img class="dropicon" src="images/video.jpg"></img></li>
-          <li class="ui-state-default"> <img class="dropicon" src="images/perfil.jpg"></img></li>
-          <li class="ui-state-default">Item 3</li>
-          <li class="ui-state-default">Item 4</li>
-          <li class="ui-state-default">Item 5</li>
+          <li id="video" class="ui-state-default"><img class="dropicon" src="images/video.jpg"></img></li>
+          <li id="perfil" class="ui-state-default"> <img class="dropicon" src="images/perfil.jpg"></img></li>
+          <li id="p1" class="ui-state-default">Item 3</li>
+          <li id="p2" class="ui-state-default">Item 4</li>
+          <li  id="p3" class="ui-state-default">Item 5</li>
         </ul>
         </div>
         
