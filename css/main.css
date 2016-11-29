@@ -1,0 +1,66 @@
+/*index page */
+
+.nav-wrapper{
+    background: deepskyblue;
+}
+.page-foot{
+    
+    margin-top: 50px;
+    background: darkorange;
+}
+.intro{
+    text-align: center;
+
+}
+.h1{
+    color: darkorange;
+    
+}
+.description
+{
+    font-size: 25;
+    color: black;
+    
+  
+}
+#start{
+    background: darkorange;
+    
+}
+/* Activity page */
+
+.palette{
+  margin: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  height: 500px;
+  text-align: center;
+
+}
+.selectionactivity{
+  margin: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  height: 500px;
+  text-align: center;
+
+}
+.dropicon{
+    height: 50px;
+    width: 50px;
+}
+#sortable1{
+   height: 100%;
+    width: 100%;
+   
+
+}
+#sortable2{
+    height: 100%;
+    width: 100%;
+   
+
+    
+}
