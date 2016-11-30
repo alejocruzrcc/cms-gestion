@@ -64,3 +64,39 @@
 
     
 }
+
+/* Activity magistral */
+
+.{
+     display: -webkit-flex;
+      -webkit-flex-direction: column;
+}
+.previsualizacion{
+    height: 400px;
+    width: 100%;
+    border: 1px black solid;
+    
+}
+.componentes{
+    height: 700px;
+    width: 100%;
+    border: 1px black solid;
+    background: green;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.componentes a{
+   margin: 10px;
+}
+.administracion{
+    height: 200px;
+    width: 100%;
+    border: 1px black solid;
+   
+}
+.btnadmin{
+    padding-top: 15px;
+}

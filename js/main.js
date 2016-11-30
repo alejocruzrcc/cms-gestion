@@ -2,7 +2,17 @@
 
  $(function() {
     
-    $("li").dblclick(function(){
+    $(".palette").click(function(){
+      
+        $("#video").click(function(event){  
+          $("#video").attr("href", "activity-m.html");
+           event.stopPropagation();
+        });
+        $("#perfil").click(function(){ 
+           alert("perfil");
+        });
+
+        
         
     });
 
@@ -10,7 +20,7 @@
     });
     $( ".ui-state-default" ).draggable({
      connectToSortable: "#sortable2",
-     helper: "clone",
+     //helper: "clone",
      revert: "invalid"
     });
     $( "ul, li" ).disableSelection();

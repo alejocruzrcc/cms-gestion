@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <metasin>
+      <tema1>
+        Tema1: Identidades fundamentales
+      </tema1>
+
+      <tema2>
+        Tema2: Identidad pitagórica
+      </tema2>
+
+      <tema3>
+        Tema3: Otras identidades
+      </tema3>
+
+      <name1>
+        Aprenderse las 8 identidades trigonometricas
+      </name1>
+
+      <recurl1>
+        https://www.youtube.com/watch?v=yPH1DBwb22g
+      </recurl1>
+
+      <name2>
+        Resumen de identidades
+      </name2>
+
+      <recurl2>
+        https://www.youtube.com/watch?v=OKArwLCGCAE
+      </recurl2>
+
+      <name3>
+        Documento de ejercicios resueltos
+      </name3>
+
+      <recurl3>
+        docRelacionados/trigonometria.pdf
+      </recurl3>
+    </metasin>
+
+</root>

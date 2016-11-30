@@ -1,0 +1,36 @@
+div span{
+  font-size: 0.9rem;
+}
+p{
+  margin:0px;
+}
+#barra{
+  padding: 0px;
+  margin-right: 70px;
+}
+#barra div, #barra p{
+  margin-left: 10px;
+}
+
+div{
+  padding: 0px;
+}
+#principal{
+  width: 100%;
+}
+
+#fila li{
+  float: left;
+
+  padding: 0px 5px 0px 5px;
+}
+
+input[type='range']#seek-bar {
+  width: 18rem;
+}
+input[type='range']#volume-bar {
+  width: 7rem;
+}
+a, i{
+  cursor: pointer;
+}

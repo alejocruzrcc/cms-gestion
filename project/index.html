@@ -1,0 +1,127 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <link rel="stylesheet" href="css/materialize.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/pdf.js"></script>
+    <script type="text/javascript" src="js/pdf.worker.js"></script>
+
+        <div id="principal" class="container vertical-align">
+
+          <br>
+        <div class="row">
+              <div class="row">
+                <div  class="col s7 ">
+                    <video class="responsive-video" id="video" preload="auto">
+                    <track id="subtes" label="Español" kind="captions" srclang="es" src="video/subs_es.vtt">
+                    <track id="subten" label="Ingles" kind="captions" srclang="en" src="video/subs_en.vtt">
+                    </video>
+                    <div id="barra" class="valign-wrapper card-panel grey lighten-3">
+
+                      <div><i id="play-pause" class="small material-icons">play_arrow</i></div>
+                      <div>
+                       <span id="horas"></span><span id="minutos">00</span>:<span id="segundos">00</span>
+                      </div>
+                      <div class="range-field" >
+                            <input id="seek-bar" type="range" value="0" width="30">
+                      </div>
+                      <div id="contad">
+                        <span id="minutos2" >0</span>:<span id="segundos2" >0</span>
+                      </div>
+                      <div><i id="mute" class="small material-icons">volume_up</i></div>
+                      <p class="range-field">
+                              <input id="volume-bar" type="range" min="0" max="1" step="0.1" value="1">
+                      </p>
+                      <div id="sett" class="container">
+                        <i  class="tiny material-icons dropdown-button" data-activates='dropdown1'>settings</i>
+                        <ul data-collapsible="accordion" id="dropdown1"  class='dropdown-content collapsible'>
+
+                        <li><a class="collapsible-header" id="repetir">No Repetir</a></li>
+                        <li>
+                            <a class="collapsible-header">Tiempo</a>
+                            <a id="atras" class="collapsible-body">Atrasar</a>
+                            <a id="adela" class="collapsible-body">Adelantar</a>
+                        </li>
+                        <li>
+                            <a class="collapsible-header">Velocidad</a>
+                            <a class="collapsible-body" id="slow">Lento</a>
+                            <a class="collapsible-body" id="normal">Normal</a>
+                            <a class="collapsible-body" id="fast">Rápdio</a>
+                       </li>
+                        <li>
+                            <a class="collapsible-header" id="captions">Subtítulos</a>
+                            <a class="collapsible-body" id="es">Español</a>
+                            <a class="collapsible-body" id="en">English</a>
+                            <a class="collapsible-body" id="off">Off</a>
+                        </li>
+
+                        <li>
+                            <a class="collapsible-header">Tamaño</a>
+                            <a class="collapsible-body" id="small">Small</a>
+                            <a class="collapsible-body" id="medium">Medium</a>
+                            <a class="collapsible-body" id="full-screen">Full Sreen</a>
+
+                        </li>
+                        <li>
+                            <a class="collapsible-header">Calidad</a>
+                            <a class="collapsible-body" id="mbaja">144p</a>
+                            <a class="collapsible-body" id="baja">244p</a>
+                            <a class="collapsible-body" id="buena">360p</a>
+                            <a class="collapsible-body" id ="excelente">480p</a>
+                            <a class="collapsible-body" id ="excelentea">720p</a>
+                            <a class="collapsible-body" id ="excelenteb">1080p</a>
+                            <a class="collapsible-body" id ="excelentec">1440p</a>
+                        </li>
+                        </ul>
+                        </div>
+                    </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col s7">
+                      <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                          <div class="collapsible-header">Transcripción</div>
+                          <div class="collapsible-body"><p class="tra">Aqui va la transcripcion...</p></div>
+                        </li>
+                      </ul>
+                    </div>
+                    </div>
+
+
+
+
+              </div>
+
+
+        </div>
+      </div>
+
+
+      <!--Import jQuery before materialize.js-->
+
+      <script type="text/javascript" src="js/mireproductor.js"></script>
+      <script type="text/javascript" src="js/sincronizacion.js"></script>
+
+
+
+      <script type="text/javascript" src="js/controller.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+    </body>
+  </html>
