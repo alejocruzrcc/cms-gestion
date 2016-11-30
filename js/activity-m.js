@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
 var urlvideo;
+var urlpresentacion;
+
+// Configuracion de magistral - video
      
     $("#reproductor").click(function(){
         $(".admin-frame").attr("id", "video");
@@ -30,7 +33,7 @@ var urlvideo;
            $.post('script.php', { url: urlvideo }, function(result) { 
                if(result = "01"){
 
-                    $("#prevcomponente").attr("src", "project/index.html");
+                    //$("#prevcomponente").attr("src", "project/index.html");
 
                }
             
@@ -41,13 +44,57 @@ var urlvideo;
 
 });
     
-
+// Configuracion de magistral - presentacion
 
      $("#presentacion").click(function(){
         $(".admin-frame").attr("id", "documento");
         $(".componentes").hide()
         $("#principal").attr("class","col s12");
+         $(".adminurl").append($("<label/>", {
+
+            "for": "urlpresentacion",
+            html :"url de la presentacion"
+        }));
+
+        $(".adminurl").append($("<input/>", {
+
+            "id": "urlpresentacion",
+            "type":"text"
+        }));
+
+        
+
+         $(".btnadmin").append($("<a/>", {
+             "id": "prev-presentacion",
+            "class": "waves-effect waves-light btn",
+            html :"Vista Previa"
+        }));
+
+       
+
+        $("#prev-presentacion").click(function(){
+           urlpresentacion = $("#urlpresentacion").val();
+          
+
+ 
+           $.post('presentacionScript.php', { url: urlpresentacion }, function(result) { 
+               if(result = "01"){
+
+                    $("#prevcomponente").attr("src", "project-activity/presentacion.html");
+
+                   
+
+               }
+           });
+            
+
+            });
+
+
+
+
     });
+
 
      $("#generar").click(function(){
 

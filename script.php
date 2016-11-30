@@ -2,7 +2,7 @@
 
 $urlvideo = $_POST["url"];
 
-$myfile = fopen("project/metadatos/video.xml", "w");
+$myfile = fopen("video.xml", "w");
 $txt1 = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root>
     <metavideo>
